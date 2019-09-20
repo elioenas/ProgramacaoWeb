@@ -54,4 +54,17 @@ public class UserService implements CrudInterface<User> {
     public List<User> getListById(Long id){
     	return userRepository.findUserById(id);
     }
+    
+    public List<User> getListByLogin(String login){
+    	return userRepository.findUserByLogin(login);
+    }
+    public List<User> getListByPassword(String password){
+    	return userRepository.findUserByPassword(password);
+    }
+    public List<User> getListByFirstName(String firstName){
+    	return userRepository.findUserByFirstName(firstName);
+    }
+    public List<User> getListByLastName(String lastName){
+    	return userRepository.findUserByLastName(lastName);
+    }
 }
