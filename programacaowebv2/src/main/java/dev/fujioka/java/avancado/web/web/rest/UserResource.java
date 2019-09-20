@@ -68,4 +68,20 @@ public class UserResource {
 	public List<User> getListById() {
 		return userService.findAll();
 	}
+	@GetMapping("/user/{login}")
+	public List<User> getListByLogin() {
+		return userService.findAll();
+	}
+	@GetMapping("/user/{password}")
+	public List<User> getListByPassword() {
+		return userService.findAll();
+	}
+	@GetMapping("/user/{firstName}")
+	public List<User> getListByFirstName() {
+		return userService.findAll();
+	}
+	@GetMapping("/user/{lastName}")
+	public List<User> getListById() {
+		return userService.findAll();
+	}
 }
